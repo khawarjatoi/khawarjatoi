@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const AboutContainer = styled.div`
+  font-size: 16px;
   p {
     padding: 8px 0 10px;
   }
@@ -22,7 +23,13 @@ const AboutContainer = styled.div`
     display: inline-block;
     text-align: center;
     @media (max-width: 830px) {
-      font-size: 12px;
+      /* font-size: 12px; */
+      font-size: 14px;
+    }
+  }
+  .skills-stack {
+    @media (max-width: 830px) {
+      text-align: center;
     }
   }
   .react-clr {
@@ -44,7 +51,7 @@ const AboutContainer = styled.div`
     color: #de4b25;
   }
   .css-clr {
-    color: #016db5;
+    color: #2195f1;
   }
   .javascript-clr {
     color: #f0d91d;
@@ -61,8 +68,11 @@ const AboutContainer = styled.div`
   .prisma-clr {
     color: #00344b;
   }
-  .postgreSql-clr {
-    color: #32648d;
+  .mariadb-clr {
+    color: #bb7358;
+  }
+  .mongodb-clr {
+    color: #10aa50;
   }
   .git-clr {
     color: #e94e32;
@@ -76,7 +86,7 @@ const AboutContainer = styled.div`
   }
   @media (max-width: 830px) {
     margin: 8vh 5vw;
-    text-align: center;
+    /* text-align: center; */
   }
 `;
 
@@ -94,14 +104,14 @@ const About = () => {
           </p>
         </div>
         <div className="codinghistory">
-          <h3>Coding History</h3>
+          <h3>Coding History:</h3>
           <p>
             I started working as Freelance Desktop Application Developer using{" "}
-            <span className="csharp-clr">
+            <span className="">
               <strong>C#</strong>
             </span>{" "}
             and developed some applications for small enterprises using{" "}
-            <a href="https://github.com/thielj/MetroFramework" target="_blank">
+            <a href="https://github.com/thielj/MetroFramework" target="_blank" aria-label="MetroFramework" rel="noreferrer">
               MetroFrameworkUi
             </a>
             {". "}
@@ -111,7 +121,7 @@ const About = () => {
           </p>
           <p>
             I also learned{" "}
-            <span className="php-clr">
+            <span className="">
               <strong>PHP</strong>
             </span>{" "}
             whilst working as Desktop Developer.
@@ -121,7 +131,7 @@ const About = () => {
           <h3>Then:</h3>
           <p>
             Later I got a job as a Remote{" "}
-            <span className="php-clr">
+            <span className="">
               <strong>PHP</strong>
             </span>{" "}
             web Devloper. Where I got involved in main project and soon became
@@ -131,7 +141,7 @@ const About = () => {
           <p>
             I've also worked on several other projects and have been gaining
             experience with{" "}
-            <span className="node-clr">
+            <span className="">
               <strong>Node.js</strong>
             </span>{" "}
             and Express while self-teaching.
@@ -141,15 +151,15 @@ const About = () => {
           <h3>Now:</h3>
           <p>
             For the last 6 months I've been learning{" "}
-            <span className="react-clr">
+            <span className="">
               <strong>React</strong>
             </span>{" "}
             and{" "}
-            <span className="graphql-clr">
+            <span className="">
               <strong>GraphQL</strong>
             </span>{" "}
             and I'm confident to build great apps with{" "}
-            <span className="react-clr">
+            <span className="">
               <strong>React</strong>
             </span>
             .
@@ -157,7 +167,7 @@ const About = () => {
           <p>
             I've also contributed a little bit in resolving issues of an open
             source software{" "}
-            <a href="https://github.com/audreyt/ethercalc" target="_blank">
+            <a href="https://github.com/audreyt/ethercalc" target="_blank" aria-label="Ethercalc" rel="noreferrer">
               EtherCalc
             </a>
             .
@@ -165,7 +175,7 @@ const About = () => {
         </div>
         <div className="skills">
           <h3>My stack of languages/technologies</h3>
-          <p>
+          <p className="skills-stack">
             <span className="skill-tag">
               <strong>
                 <span className="html-clr">HTML</span>{" "}
@@ -197,7 +207,7 @@ const About = () => {
               <strong>
                 Relational Databases (<span className="mysql2-clr">MySQL</span>
                 {", "}
-                <span className="postgreSql-clr">PostgreSql</span>)
+                <span className="mariadb-clr">MariaDB</span>)
               </strong>
             </span>
             <span className="skill-tag">
@@ -205,9 +215,9 @@ const About = () => {
                 ORMs (<span className="primsa-clr">Prisma</span>)
               </strong>
             </span>
-            {/* <span className="skill-tag">
-              <strong>NoSQL Databases (MongoDB with Mongoose)</strong>
-            </span> */}
+            <span className="skill-tag">
+              <strong>NoSQL Databases (<span className="mongodb-clr">MongoDB</span>)</strong>
+            </span>
             <span className="skill-tag">
               <strong>
                 Version Controls (<span className="git-clr">Git</span>

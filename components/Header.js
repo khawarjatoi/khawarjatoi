@@ -43,8 +43,8 @@ class Header extends Component {
 
     return (
       <MainSidebar isVisible={showSidebar}>
-        <Nav />
-        <ToggleButton onClick={this.toggleSidebar}>
+        <Nav toggleSidebar={this.toggleSidebar} isTablet={this.state.isTablet}/>
+        <ToggleButton aria-label="toggle" onClick={this.toggleSidebar}>
           <ToggleIcon isVisible={showSidebar}>
             <span className="line line-angle1"></span>
             <span className="line line-angle2"></span>

@@ -61,7 +61,7 @@ const StyledIntro = styled.div`
     }
 
     section:first-of-type p {
-      font-size: 10px;
+      font-size: 12px;
     }
   }
 
