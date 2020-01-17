@@ -57,7 +57,7 @@ const Social = () => (
         </svg>
       </a>
       <a
-        href='https://www.linkedin.com/in/khawarjatoi'
+        href=''
         target='_blank'
         aria-label='LinkedIn'
         rel='noreferrer'
