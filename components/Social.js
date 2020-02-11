@@ -38,12 +38,12 @@ const Social = () => (
   <Wrapper>
     <h3>CONTACT ME</h3>
     <a
-      href='mailto:khawarjatoi@live.com'
+      href='mailto:hey@khawarjatoi.com'
       aria-label='mail'
       rel='noreferrer'
       className='social_Email'
     >
-      khawarjatoi@live.com
+      hey@khawarjatoi.com
     </a>
     <IconContainer>
       <a
