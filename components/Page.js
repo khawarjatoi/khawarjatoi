@@ -8,17 +8,17 @@ import Header from "./Header";
 import theme from "./styles/Page/utils/theme";
 
 const GlobalStyles = createGlobalStyle`
-  /* @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap'); */
+  @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
   /* @font-face {
     font-family: '"Raleway", sans-serif';
     src: url(https://fonts.googleapis.com/css?family=Raleway:200,100,400);
     font-weight: normal;
     font-style: normal;
   } */
-  @font-face {
+  /* @font-face {
     font-family: "SF Pro Display";
     src: url("./SF-Pro-Display-Regular.otf");
-  }
+  } */
 
   /* latin */
   /* @font-face {
@@ -42,8 +42,8 @@ const GlobalStyles = createGlobalStyle`
     height: 100%;
     box-sizing: border-box;
     /* font-family: 'Raleway'; */
-    font-family: 'SF Pro Display';
-    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'SF Pro Display'; */
+    font-family: 'Montserrat', sans-serif;
     color: black;
     background-color: white;
     font-size: 18px;

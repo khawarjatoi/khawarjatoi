@@ -4,10 +4,10 @@ import Social from "./Social";
 
 class Intro extends Component {
   toRotate = [
-    "learn something new.",
-    "know how things work underneath.",
+    "solve problems with elegant solutions.",
     "create something from nothing.",
-    "solve problems with elegant solutions."
+    "know how things work underneath.",
+    "learn something new.",
   ];
   period = 2000;
   loopNum = 0;

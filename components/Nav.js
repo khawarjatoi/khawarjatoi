@@ -9,7 +9,7 @@ const Nav = props => (
     <div className='image-outer'>
       <Link href='/'>
         <img
-          onClick={toggle(props)}
+          onClick={e => toggle(props)}
           className='round-image'
           src='khawarjatoi.svg'
           alt='KhawarJatoi'
@@ -19,10 +19,10 @@ const Nav = props => (
       </Link>
     </div>
     <Link href='/about'>
-      <a onClick={toggle(props)}>About</a>
+      <a onClick={e => toggle(props)}>About</a>
     </Link>
     <a
-      onClick={toggle(props)}
+      onClick={e => toggle(props)}
       href='https://registry.jsonresume.org/khawarjatoi'
       target='_blank'
       aria-label='jsonresume'
@@ -31,7 +31,7 @@ const Nav = props => (
       Resume
     </a>
     <Link href='/blog'>
-      <a onClick={toggle(props)}>Blog</a>
+      <a onClick={e => toggle(props)}>Blog</a>
     </Link>
   </StyledNav>
 );
