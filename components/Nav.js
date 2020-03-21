@@ -2,7 +2,7 @@ import Link from 'next/link';
 import StyledNav from './styles/Sidebar/StyledNav';
 
 const toggle = ({ isTablet, toggleSidebar }) =>
-  isTablet && window.innerWidth < 831 && toggleSidebar;
+  isTablet && window.innerWidth < 831 && toggleSidebar();
 
 const Nav = props => (
   <StyledNav>
