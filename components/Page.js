@@ -3,6 +3,7 @@ import styled, { ThemeProvider, createGlobalStyle } from "styled-components";
 
 import Meta from "./Meta";
 import Header from "./Header";
+import Footer from "./Footer";
 
 // import GlobalStyles from "./styles/Page/utils/global";
 import theme from "./styles/Page/utils/theme";
@@ -44,6 +45,7 @@ const GlobalStyles = createGlobalStyle`
     /* font-family: 'Raleway'; */
     /* font-family: 'SF Pro Display'; */
     font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     color: black;
     background-color: white;
     font-size: 18px;
@@ -92,6 +94,7 @@ class Page extends Component {
         <DocScroller>
           <Header />
           <Inner>{this.props.children}</Inner>
+          <Footer />
         </DocScroller>
       </ThemeProvider>
     );
