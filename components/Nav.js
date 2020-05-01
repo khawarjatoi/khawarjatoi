@@ -23,9 +23,9 @@ const Nav = props => (
     </Link>
     <a
       onClick={e => toggle(props)}
-      href='https://registry.jsonresume.org/khawarjatoi'
+      href='/resume.pdf'
       target='_blank'
-      aria-label='jsonresume'
+      aria-label='resume'
       rel='noreferrer'
     >
       Resume
