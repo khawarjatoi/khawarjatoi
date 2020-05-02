@@ -35,6 +35,9 @@ const AboutContainer = styled.div`
   .react-clr {
     color: #00d8ff;
   }
+  .redux-clr {
+    color: #ae95d5;
+  }
   .node-clr {
     color: #88bc5b;
   }
@@ -188,14 +191,20 @@ const About = () => {
             <span className="skill-tag styled-clr">
               <strong>styled-components 💅</strong>
             </span>
+            <span className="skill-tag react-clr">
+              <strong>React</strong>
+            </span>
+            <span className="skill-tag redux-clr">
+              <strong>Redux</strong>
+            </span>
+            <span className="skill-tag">
+              <strong>Next.js</strong>
+            </span>
             <span className="skill-tag php-clr">
               <strong>PHP</strong>
             </span>
             <span className="skill-tag node-clr">
               <strong>Node.js</strong>
-            </span>
-            <span className="skill-tag react-clr">
-              <strong>React</strong>
             </span>
             <span className="skill-tag">
               <strong>

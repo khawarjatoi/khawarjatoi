@@ -56,12 +56,14 @@ class Intro extends Component {
       <StyledIntro>
         <section>
           <p>DRIVEN BY PASSION & CURIOUS BY NATURE</p>
-          <h1>Hi, I'm Khawar Jatoi</h1>
+          <h1>
+            Hi, I'm <span className='colored-name'>Khawar Jatoi</span>
+          </h1>
           <p>
             A fullstack web developer who loves to
             <span
-              className="txt-rotate"
-              ref={trElement => (this.trElement = trElement)}
+              className='txt-rotate'
+              ref={(trElement) => (this.trElement = trElement)}
             ></span>
           </p>
           <Social />

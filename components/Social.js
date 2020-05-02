@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   }
 
   a {
-    color: #000;
+    color: #0366d6;
   }
 `;
 const IconContainer = styled.div`
