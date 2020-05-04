@@ -10,7 +10,7 @@ const Meta = () => (
       name='description'
       content="Khawar Jatoi's site"
     ></meta>
-    <link rel='shortcut icon' href='/KJ-blackwhite.png' />
+    <link rel='shortcut icon' href='/KJ-blackpink.png' />
     <title>
       Full-Stack Web Developer | Khawar Jatoi | JavaScript, Node.js, React.js
     </title>

@@ -3,6 +3,8 @@ const theme = {
     main: "",
     white: "#FFFFFF",
     black: "#000000",
+    red: "#ce4841",
+    blue: "#3772ff",
     lightTheme: {
       text: "",
       textHighlight: "",

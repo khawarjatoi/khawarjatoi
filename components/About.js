@@ -7,11 +7,15 @@ const AboutContainer = styled.div`
     padding: 8px 0 10px;
   }
   a {
-    color: #0070c9;
-    :hover {
+    color: #000000;
+    border-bottom: 1px solid black;
+    /* :hover {
       text-decoration: underline;
       text-decoration-color: #0070c9;
-    }
+    } */
+  }
+  h3 {
+    color: #247ba0;
   }
   .skill-tag {
     background-color: #000;

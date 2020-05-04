@@ -13,8 +13,7 @@ const StyledIntro = styled.div`
     border-right: 0.08em solid #666;
   }
   .colored-name {
-    color: #f5f5f5;
-    background-color: #333333;
+    color: #ce4841;
     font-weight: 600;
     padding: 3px;
   }

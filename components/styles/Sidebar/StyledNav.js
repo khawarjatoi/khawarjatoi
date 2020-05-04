@@ -28,7 +28,7 @@ const StyledNav = styled.nav`
     padding-top: 20px;
   }
   a:hover {
-    color: #aaa;
+    color: #ce4841;
   }
 `;
 

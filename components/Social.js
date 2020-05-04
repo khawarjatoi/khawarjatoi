@@ -5,10 +5,12 @@ const Wrapper = styled.div`
   margin-top: 4rem;
   h3 {
     text-transform: uppercase;
+    color: #247ba0;
   }
 
   a {
-    color: #0366d6;
+    /* color: #0366d6; */
+    color: #333333;
   }
 `;
 const IconContainer = styled.div`
