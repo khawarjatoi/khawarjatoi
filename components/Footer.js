@@ -15,7 +15,7 @@ const FooterContainer = styled.div`
     align-items: center;
     transition: all 1.5s ease-in-out;
     height: 20px;
-    max-width: 30px;
+    max-width: 35px;
     cursor: pointer;
     font-size: small;
   }
@@ -74,7 +74,8 @@ const Footer = () => {
   return (
     <FooterContainer>
       <div className='contact'>
-  <span className='text'>Made with</span>{'    '} <p className='text-love'>❤</p>{' '}
+        <span className='text'>Made with</span>
+        <p className='text-love'>❤️</p>
         <span className='text speedx2'>by Khawar Jatoi © 2020</span>
       </div>
     </FooterContainer>
