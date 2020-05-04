@@ -1,18 +1,19 @@
-import React, { Component } from "react";
-import StyledIntro from "./styles/Intro/StyledIntro";
-import Social from "./Social";
+import React, { Component } from 'react';
+import StyledIntro from './styles/Intro/StyledIntro';
+import Social from './Social';
+import Particles from './Particles';
 
 class Intro extends Component {
   toRotate = [
-    "solve problems with elegant solutions.",
-    "create something from nothing.",
-    "know how things work underneath.",
-    "learn something new.",
+    'solve problems with elegant solutions.',
+    'create something from nothing.',
+    'know how things work underneath.',
+    'learn something new.',
   ];
   period = 2000;
   loopNum = 0;
   period = 2000;
-  txt = "";
+  txt = '';
   isDeleting = false;
 
   componentDidMount() {
@@ -41,34 +42,37 @@ class Intro extends Component {
     if (!this.isDeleting && this.txt === fullTxt) {
       delta = this.period;
       this.isDeleting = true;
-    } else if (this.isDeleting && this.txt === "") {
+    } else if (this.isDeleting && this.txt === '') {
       this.isDeleting = false;
       this.loopNum++;
       delta = 500;
     }
-    setTimeout(function() {
+    setTimeout(function () {
       that.tick();
     }, delta);
   };
 
   render() {
     return (
-      <StyledIntro>
-        <section>
-          <p>DRIVEN BY PASSION & CURIOUS BY NATURE</p>
-          <h1>
-            Hi, I'm <span className='colored-name'>Khawar Jatoi</span>
-          </h1>
-          <p>
-            A fullstack web developer who loves to
-            <span
-              className='txt-rotate'
-              ref={(trElement) => (this.trElement = trElement)}
-            ></span>
-          </p>
-          <Social />
-        </section>
-      </StyledIntro>
+      <>
+        <Particles />
+        <StyledIntro>
+          <section>
+            <p>DRIVEN BY PASSION & CURIOUS BY NATURE</p>
+            <h1>
+              Hi, I'm <span className='colored-name'>Khawar Jatoi</span>
+            </h1>
+            <p>
+              A fullstack web developer who loves to
+              <span
+                className='txt-rotate'
+                ref={(trElement) => (this.trElement = trElement)}
+              ></span>
+            </p>
+            <Social />
+          </section>
+        </StyledIntro>
+      </>
     );
   }
 }

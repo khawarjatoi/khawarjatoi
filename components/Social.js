@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
   margin-top: 4rem;
+  z-index: 1;
   h3 {
     text-transform: uppercase;
     color: #247ba0;
