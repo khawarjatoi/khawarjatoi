@@ -1,11 +1,15 @@
 import React, { useRef, createRef } from 'react';
-import { TimelineLite, Power2 } from 'gsap';
+// import { gsap } from 'gsap';
+// import { TimelineMax, Power2, CSSPlugin } from 'gsap/all';
+import { TimelineMax, Power2} from 'gsap';
 
 import StyledProjects from './styles/Projects/StyledProjects';
 import useWindowDimensions from './utils/useWindowDimensions';
 
 import { projects as data } from '../config';
 import ProjectsMobile from './ProjectsMobile';
+
+// gsap.registerPlugin(CSSPlugin);
 
 const Projects = (props) => {
   const { height, width } = useWindowDimensions();
@@ -37,7 +41,7 @@ const Projects = (props) => {
   //  }, [imgsCount]);
 
   const onWheel = (e) => {
-    var tl = new TimelineLite();
+    var tl = new TimelineMax();
     if (canSlide) {
       canSlide = false;
       previousProject = activeProject;
