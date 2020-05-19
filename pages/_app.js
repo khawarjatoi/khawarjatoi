@@ -1,15 +1,17 @@
-import App from "next/app";
-import Page from "../components/Page";
+import React from 'react';
+import { MDXProvider } from '@mdx-js/react';
 
-class MyApp extends App {
-  render() {
-    const { Component, pageProps } = this.props;
-    return (
-          <Page>
-            <Component {...pageProps} />
-          </Page>
-    );
-  }
-}
+import mdComponents from '../components/mdxComponents';
+import Page from '../components/Page';
 
-export default MyApp;
+const App = ({ Component, pageProps }) => {
+  return (
+    <MDXProvider components={mdComponents}>
+      <Page>
+        <Component {...pageProps} />
+      </Page>
+    </MDXProvider>
+  );
+};
+
+export default App;

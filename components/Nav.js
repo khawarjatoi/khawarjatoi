@@ -21,6 +21,9 @@ const Nav = (props) => (
     <Link href='/about'>
       <a onClick={(e) => toggle(props)}>About</a>
     </Link>
+    <Link href='/projects'>
+      <a onClick={(e) => toggle(props)}>Projects</a>
+    </Link>
     <a
       onClick={(e) => toggle(props)}
       href='/resume.pdf'
@@ -30,9 +33,6 @@ const Nav = (props) => (
     >
       Resume
     </a>
-    {/* <Link href='/portfolio'>
-      <a onClick={(e) => toggle(props)}>Portfolio</a>
-    </Link> */}
     <Link href='/blog'>
       <a onClick={(e) => toggle(props)}>Blog</a>
     </Link>

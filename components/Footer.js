@@ -3,6 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const FooterContainer = styled.div`
+  z-index: 1;
   .contact {
     position: absolute;
     bottom: 1rem;

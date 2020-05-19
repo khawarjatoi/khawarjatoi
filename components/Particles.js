@@ -16,7 +16,7 @@ const Particles = ({ children }) => {
         params={{
           particles: {
             number: {
-              value: 200,
+              value: 50,
               density: {
                 enable: true,
                 value_area: 1420.4657549380909,
@@ -26,7 +26,7 @@ const Particles = ({ children }) => {
               value: colorArray,
             },
             shape: {
-              type: 'circle',
+              type: 'triangle',
               stroke: {
                 width: 0,
                 color: colorArray,
