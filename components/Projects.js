@@ -1,7 +1,5 @@
 import React, { useRef, createRef } from 'react';
-// import { gsap } from 'gsap';
-// import { TimelineMax, Power2, CSSPlugin } from 'gsap/all';
-import { TimelineMax, Power2} from 'gsap';
+import {gsap, TimelineMax, Power2, CSSPlugin } from 'gsap';
 
 import StyledProjects from './styles/Projects/StyledProjects';
 import useWindowDimensions from './utils/useWindowDimensions';
@@ -9,7 +7,7 @@ import useWindowDimensions from './utils/useWindowDimensions';
 import { projects as data } from '../config';
 import ProjectsMobile from './ProjectsMobile';
 
-// gsap.registerPlugin(CSSPlugin);
+gsap.registerPlugin(CSSPlugin);
 
 const Projects = (props) => {
   const { height, width } = useWindowDimensions();
