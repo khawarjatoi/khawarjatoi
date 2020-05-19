@@ -66,11 +66,11 @@ const StyledProjects = styled.div`
     padding: 20px;
     opacity: 1;
   }
-  .mainContainer .previewContainer:hover .project {
+  .mainContainer .previewContainer:hover .seeProject {
     opacity: 1;
   }
   @media screen and (min-width: 751px) and (max-width: 1024px) {
-    .mainContainer .previewContainer:hover .project {
+    .mainContainer .previewContainer:hover .seeProject {
       opacity: 0;
     }
   }
@@ -127,13 +127,13 @@ const StyledProjects = styled.div`
     width: 100%;
     background-color: #fff;
   }
-  .mainContainer .previewContainer .project {
+
+  .mainContainer .previewContainer .seeProject {
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
-    color: #fff;
-    -webkit-transition: opacity 0.25s ease;
+    color: #000;
     transition: opacity 0.25s ease;
     text-transform: uppercase;
     font-size: 12px;
@@ -183,12 +183,14 @@ const StyledProjects = styled.div`
     }
   }
   ul li h2 {
+    color: #247ba0;
     font-size: 50px;
     letter-spacing: 2px;
     margin: 0;
   }
   @media screen and (min-width: 751px) and (max-width: 1024px) {
     ul li h2 {
+      color: #247ba0;
       font-size: 30px;
     }
   }
@@ -232,12 +234,17 @@ const StyledProjects = styled.div`
   }
   ul.mobile li h2 {
     font-size: 25px;
+    color: #247ba0;
   }
   ul.mobile li .description {
     margin-top: 25px;
   }
   ul.mobile p {
     width: 100%;
+  }
+  ul.mobile a {
+    color: #000000;
+    border-bottom: 1px solid black;
   }
 
   @-webkit-keyframes slideDown {

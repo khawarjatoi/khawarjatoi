@@ -1,5 +1,5 @@
 import React, { useRef, createRef } from 'react';
-import {gsap, TimelineMax, Power2, CSSPlugin } from 'gsap';
+import { gsap, TimelineMax, Power2, CSSPlugin } from 'gsap';
 
 import StyledProjects from './styles/Projects/StyledProjects';
 import useWindowDimensions from './utils/useWindowDimensions';
@@ -7,6 +7,7 @@ import useWindowDimensions from './utils/useWindowDimensions';
 import { projects as data } from '../config';
 import ProjectsMobile from './ProjectsMobile';
 
+//  To resolve gsap.registerPlugin CSS issue in production
 gsap.registerPlugin(CSSPlugin);
 
 const Projects = (props) => {
@@ -16,6 +17,7 @@ const Projects = (props) => {
   const previews = useRef([]);
   const previewContainer = useRef(null);
   const transitionDiv = useRef(null);
+  const seeProject = useRef(null);
 
   let canSlide = true;
   let slideDown = true;
@@ -138,15 +140,17 @@ const Projects = (props) => {
         tl.to(previews.current[previousProject], 0, { display: 'none' }, 0.5);
 
         // Select right link
-        if (activeProject === 0) {
+        if (activeProject >= 2) {
           previewContainer.current.removeAttribute('href');
           previewContainer.current.removeAttribute('target');
+          seeProject.current.innerHTML = '';
         } else {
           previewContainer.current.setAttribute(
             'href',
             previews.current[activeProject].getAttribute('link')
           );
           previewContainer.current.setAttribute('target', '_blank');
+          seeProject.current.innerHTML = 'See the project';
         }
       }
     }
@@ -165,6 +169,12 @@ const Projects = (props) => {
       previewContainer.current.style.transform = `translate(${
         mouse.x * 0.08
       }px, ${mouse.y * 0.08}px)`;
+      seeProject.current.style.left = `${
+        e.clientX - previewContainer.current.getBoundingClientRect().left + 20
+      }px`;
+      seeProject.current.style.top = `${
+        e.clientY - previewContainer.current.getBoundingClientRect().top + 10
+      }px`;
     });
   };
 
@@ -210,11 +220,16 @@ const Projects = (props) => {
           })}
         </ul>
 
-        <a className='previewContainer' ref={previewContainer} href='#!'>
+        <a
+          className='previewContainer'
+          ref={previewContainer}
+          target='_blank'
+          href=''
+        >
           <div className='overflowContainer'>
             {data.map((project, i) => {
               const style = !i ? { display: 'block' } : { display: 'none' };
-              const {image, link} = project;
+              const { image, link } = project;
               return (
                 <img
                   key={i}
@@ -232,7 +247,13 @@ const Projects = (props) => {
             className='transition'
             ref={(div) => (transitionDiv.current = div)}
             style={{ bottom: '0px', top: 'auto', height: '0px' }}
-          />
+          ></div>
+          <div
+            className='seeProject'
+            ref={(div) => (seeProject.current = div)}
+          >
+            See The Project
+          </div>
         </a>
       </div>
       <ProjectsMobile />
