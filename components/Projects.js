@@ -248,10 +248,7 @@ const Projects = (props) => {
             ref={(div) => (transitionDiv.current = div)}
             style={{ bottom: '0px', top: 'auto', height: '0px' }}
           ></div>
-          <div
-            className='seeProject'
-            ref={(div) => (seeProject.current = div)}
-          >
+          <div className='seeProject' ref={(div) => (seeProject.current = div)}>
             See The Project
           </div>
         </a>

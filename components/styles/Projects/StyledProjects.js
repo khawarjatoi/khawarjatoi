@@ -245,6 +245,7 @@ const StyledProjects = styled.div`
   ul.mobile a {
     color: #000000;
     border-bottom: 1px solid black;
+    pointer-events: all;
   }
 
   @-webkit-keyframes slideDown {

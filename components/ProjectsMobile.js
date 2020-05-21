@@ -1,12 +1,13 @@
 import React from 'react';
+import Link from 'next/link';
 
-import {projects as data} from '../config';
+import { projects as data } from '../config';
 
 const ProjectsMobile = () => {
   return (
     <ul className='mobile'>
       {data.map((project, i) => {
-        const {name, keywords, date, description, link} = project;
+        const { name, keywords, date, description, link } = project;
         return (
           <li key={i}>
             <h2>{name}</h2>
@@ -22,7 +23,6 @@ const ProjectsMobile = () => {
               {description.detail}
               <br />
               <a
-                className='seeProject'
                 href={link}
                 target='_blank'
                 aria-label={name}
@@ -36,6 +36,6 @@ const ProjectsMobile = () => {
       })}
     </ul>
   );
-}
+};
 
-export default ProjectsMobile
+export default ProjectsMobile;
