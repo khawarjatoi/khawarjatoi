@@ -35,25 +35,27 @@ const Skills = () => {
         </span>
         <span className='skill-tag'>
           <strong>
-            Data Query language (<span className='graphql-clr'>GraphQL</span>)
+            NoSQL Databases (<span className='mongodb-clr'>MongoDB</span>)
           </strong>
         </span>
         <span className='skill-tag'>
           <strong>
             Relational Databases (<span className='mysql2-clr'>MySQL</span>
             {', '}
-            <span className='mariadb-clr'>MariaDB</span>)
+            <span className='mariadb-clr'>MariaDB</span>
+            {', '}
+            <span className='css-clr'>PostgreSQL</span>)
+          </strong>
+        </span>
+        <span className='skill-tag'>
+          <strong>
+            Data Query language (<span className='graphql-clr'>GraphQL</span>)
           </strong>
         </span>
         <span className='skill-tag'>
           <strong>
             {' '}
-            ORMs (<span className='primsa-clr'>Prisma</span>){' '}
-          </strong>
-        </span>
-        <span className='skill-tag'>
-          <strong>
-            NoSQL Databases (<span className='mongodb-clr'>MongoDB</span>)
+            ORMs (<span className='primsa-clr'>Prisma, Sequelize</span>){' '}
           </strong>
         </span>
         <span className='skill-tag'>
@@ -61,6 +63,15 @@ const Skills = () => {
             Version Controls (<span className='git-clr'>Git</span>
             {', '}
             <span className='svn-clr'>SVN</span>)
+          </strong>
+        </span>
+        <span className='skill-tag'>
+          <strong>
+            Others (
+            <span className='primsa-clr'>
+              AWS, AWS-Lambda, Blockchain Devlopment{' '}
+            </span>
+            )
           </strong>
         </span>
         <span className='skill-tag'>
