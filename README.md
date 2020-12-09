@@ -8,4 +8,4 @@ I work mostly with Javascript ecosystem(React, Node.js).
 
 ## Where to find me
 
-You can connect me on Twitter ([@khawar_jatoi](https://twitter.com/khawar_jatoi)) or shoot me an ([email](mailto:hey@khawarjatoi.com)).
+You can connect me on Twitter ([@khawar_jatoi](https://twitter.com/khawar_jatoi)) or shoot me an [email](mailto:hey@khawarjatoi.com).
