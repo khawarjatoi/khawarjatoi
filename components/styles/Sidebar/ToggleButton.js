@@ -14,6 +14,7 @@ const ToggleButton = styled.button`
   transform-origin: left center;
   top: 22px;
   left: 188px;
+  outline-width: 0;
   @media (max-width: 750px) {
     left: 120px;
   }
