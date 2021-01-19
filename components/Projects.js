@@ -230,6 +230,7 @@ const Projects = (props) => {
             {data.map((project, i) => {
               const style = !i ? { display: 'block' } : { display: 'none' };
               const { image, link } = project;
+              console.log(link)
               return (
                 <img
                   key={i}
