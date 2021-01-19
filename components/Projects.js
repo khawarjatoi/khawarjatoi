@@ -140,7 +140,7 @@ const Projects = (props) => {
         tl.to(previews.current[previousProject], 0, { display: 'none' }, 0.5);
 
         // Select right link
-        if (activeProject >= 2) {
+        if (!previews.current[activeProject].getAttribute('link')) {
           previewContainer.current.removeAttribute('href');
           previewContainer.current.removeAttribute('target');
           seeProject.current.innerHTML = '';
@@ -230,7 +230,6 @@ const Projects = (props) => {
             {data.map((project, i) => {
               const style = !i ? { display: 'block' } : { display: 'none' };
               const { image, link } = project;
-              console.log(link)
               return (
                 <img
                   key={i}
