@@ -4,7 +4,7 @@ import React, { useEffect, useRef } from 'react';
 import StyledIntro from './styles/Intro/StyledIntro';
 // Components
 import Social from './Social';
-import Particles from './Particles';
+// import Particles from './Particles';
 // utils
 import tick from './utils/toRotateText';
 
@@ -18,7 +18,7 @@ const Intro = () => {
 
   return (
     <>
-      <Particles />
+      {/* <Particles /> */}
       <StyledIntro>
         <section>
           <p>DRIVEN BY PASSION & CURIOUS BY NATURE</p>
