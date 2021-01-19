@@ -117,7 +117,6 @@ const StyledProjects = styled.div`
     -khtml-user-drag: none;
     -moz-user-drag: none;
     -o-user-drag: none;
-    user-drag: none;
     display: none;
   }
   .mainContainer .previewContainer .transition {

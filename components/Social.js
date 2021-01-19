@@ -4,9 +4,11 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
   margin-top: 4rem;
   z-index: 1;
-  h3 {
+  p {
     text-transform: uppercase;
     color: #247ba0;
+    font-size: 1.1rem;
+    font-weight: 600;
   }
 
   a {
@@ -39,7 +41,7 @@ const IconContainer = styled.div`
  */
 const Social = () => (
   <Wrapper>
-    <h3>CONTACT ME</h3>
+    <p>CONTACT ME</p>
     <a
       href='mailto:hey@khawarjatoi.com'
       aria-label='mail'
@@ -60,7 +62,7 @@ const Social = () => (
         </svg>
       </a>
       <a
-        href=''
+        href='https://linkedin.com/in/khawarjatoi '
         target='_blank'
         aria-label='LinkedIn'
         rel='noreferrer'
