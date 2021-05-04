@@ -1,8 +1,8 @@
-# Unhandled Exception
+# Assertive Icon
 
 ## Hi 👋, I'm Khawar Jatoi and I write code.
 
-I am doing freelance work 🚀 for international clients.
+I am doing freelance work 🚀 for international clients. But if you believe I would be a good fit for a role, I am happy to discuss the opportunity.
 
 I work mostly with Javascript ecosystem(React, Node.js).
 
