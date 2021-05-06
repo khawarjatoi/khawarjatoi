@@ -1,8 +1,8 @@
 import React from 'react';
 import { MDXProvider } from '@mdx-js/react';
 
-import mdComponents from '../components/mdxComponents';
-import Page from '../components/Page';
+import mdComponents from 'components/mdxComponents';
+import Page from 'components/Page';
 
 const App = ({ Component, pageProps }) => {
   return (
