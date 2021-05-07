@@ -1,5 +1,5 @@
-import Projects from '../components/Projects';
+import Projects from 'components/Projects'
 
-const ProjectsPage = props => <Projects />;
+const ProjectsPage = () => <Projects />
 
-export default ProjectsPage;
+export default ProjectsPage

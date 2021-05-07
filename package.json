@@ -10,21 +10,22 @@
     "heroku-postbuild": "next build"
   },
   "dependencies": {
-    "@mdx-js/loader": "^1.6.1",
-    "@next/mdx": "^9.4.0",
+    "@mdx-js/loader": "^1.6.22",
+    "@next/mdx": "^9.5.5",
     "babel-core": "^6.26.3",
-    "gsap": "^3.2.6",
-    "next": "^9.3.6",
+    "gray-matter": "^4.0.3",
+    "gsap": "^3.6.1",
+    "next": "^9.5.5",
     "prop-types": "^15.7.2",
     "react": "16.11.0",
     "react-dom": "16.11.0",
-    "react-particles-js": "^3.2.1",
-    "react-transition-group": "^4.3.0",
+    "react-particles-js": "^3.4.1",
+    "react-transition-group": "^4.4.1",
     "styled-components": "^4.4.0"
   },
   "devDependencies": {
     "babel-jest": "^24.9.0",
-    "babel-plugin-styled-components": "^1.10.7"
+    "babel-plugin-styled-components": "^1.12.0"
   },
   "//": "This is our babel config, I prefer this over a .babelrc file",
   "babel": {

@@ -68,7 +68,7 @@ const Page = (props) => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      {/* <Meta /> */}
+      <Meta />
       <DocScroller style={styles}>
         <Header />
         <Inner>{props.children}</Inner>
