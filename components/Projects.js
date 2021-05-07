@@ -4,7 +4,7 @@ import { gsap, TimelineMax, Power2, CSSPlugin } from 'gsap';
 import StyledProjects from './styles/Projects/StyledProjects';
 import useWindowDimensions from './utils/useWindowDimensions';
 
-import { projects as data } from '../config';
+import { projects as data } from '../data';
 import ProjectsMobile from './ProjectsMobile';
 
 //  To resolve gsap.registerPlugin CSS issue in production

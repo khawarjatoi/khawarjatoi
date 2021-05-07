@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { projects as data } from '../config';
+import { projects as data } from '../data';
 
 const ProjectsMobile = () => {
   return (

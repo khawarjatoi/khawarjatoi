@@ -34,7 +34,7 @@ export const projects = [
     name: 'Personal Site',
     description: {
       info:
-        'Built personal portfolio to practice React and showcase what I have been working lately.',
+        'Built personal portfolio to showcase what I have been working lately.',
     },
     link: 'http://www.khawarjatoi.com/',
     keywords: 'React, Next.js, styled-components, MDX, Heroku',

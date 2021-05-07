@@ -1,4 +1,4 @@
-import {toRotateData} from '../../config';
+import {toRotateData} from '../../data';
   const period = 2000;
   let loopNum = 0,
     txt = '',
