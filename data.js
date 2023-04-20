@@ -49,7 +49,7 @@ export const projects = [
       detail:
         'In future part, after selecting the date and cryptocurrency it will predict the value of that currency at that time.\nOther features include: Saving conversions with one button click, Sharing conversions on known social media platforms, Connect to the wallet.',
     },
-    link: 'https://cryptotimemachine.com/',
+    link: '',
     keywords:
       'React, Redux-Toolkit, Typescript, Styled-Components, Framer-Motion, Web3-react, Node.js, MongoDB',
     date: 'Sep 2020',
@@ -63,7 +63,7 @@ export const projects = [
       detail:
         "Seeing the USD value is very helpful, but Uniswap app doesn't show this information, which essentially keeps it's users in the dark about how much they are losing when trading.\n I have also devleoped extension that adds in the USD value automatically.",
     },
-    link: 'https://swapnomics-frontend.herokuapp.com/',
+    link: '',
     keywords:
       'React, Redux-Toolkit, Typescript, Styled-Components, Restful, Web3-react, Api',
     date: 'Nov 2020',
@@ -76,7 +76,7 @@ export const projects = [
         "Company web app that provides technical services to it's customers",
       detail: '',
     },
-    link: 'http://hamadeissa.com/',
+    link: '',
     keywords: 'React, React hooks, Css3, Bootstrap, Firebase',
     date: 'Jan 2021',
     image: '/hamadeissa',
@@ -100,7 +100,7 @@ export const projects = [
     description: {
       info: 'An ecommerce website developed using MERN Stack',
     },
-    link: 'https://bluestarhft.herokuapp.com/',
+    link: '',
     keywords:
       'React, Redux, React-Final-Form, Next.js, Node.js, MongoDB, Heroku',
     date: 'March 2020',
